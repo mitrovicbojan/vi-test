@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: url("../img/hero-image.jpg") no-repeat center top;
+  background: url("../img/hero-image.jpg") center top;
   background-size: cover;
   -webkit-clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 0);
@@ -35,11 +35,20 @@
 }
 
 .nav {
+  background: #FF6735;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FF6735;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  list-style-type: none;
+  padding-right: 1rem;
 }
 
 body {
@@ -63,8 +72,8 @@ h1, h2, h3 {
 header {
   position: fixed;
   width: 100%;
-  z-index: 2;
   padding: 1rem;
+  z-index: 2;
 }
 
 main {
