@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -6,12 +12,6 @@
   text-align: center;
   background: url("../img/hero-image.jpg") no-repeat center top;
   background-size: cover;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
