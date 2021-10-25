@@ -13,6 +13,24 @@
   background: url("../img/hero-image.jpg") no-repeat center top;
   background-size: cover;
 }
+.home__title {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.btn-home {
+  background-color: #FF6735;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 4px 2px;
+}
 
 body {
   background: #fff;
