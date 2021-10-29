@@ -1,31 +1,23 @@
-.logo {
-    display: flex;
-    position: absolute;
-    color: black;
-    margin-top: 1.8rem;
-    width: 120px;   
-}
-ul {
-    position: relative;
-    display: flex;
-    
-    li {
-        position: relative;
-        list-style: none;
+nav {
+    background-color: $orange-color;
+    height: 45px;
+    width: 100%;
 
-        a {
-            position: relative;
-            display: inline-block;
-            margin: 0 15px;
-            text-transform: uppercase;
-            padding: 15px;
-            
-            
+    ul {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        list-style-type: none;
+        
 
-            &:hover {
-                background-color: black;
+        li {
+            float: left;
+            a{
+                display: block;
             }
         }
-
+        
+        
     }
+
 }

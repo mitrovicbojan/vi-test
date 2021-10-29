@@ -12,18 +12,6 @@ body {
     height: 100vh;
     line-height: 1;
 }
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $orange-color;
-}
 
 a {
     text-decoration: none;
