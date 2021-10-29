@@ -1,5 +1,24 @@
 .logo {
     display: flex;
+    position: absolute;
     color: black;
-    width: 100px;   
+    margin-top: 1.8rem;
+    width: 120px;   
+}
+ul {
+    position: relative;
+    display: flex;
+
+    li {
+        list-style: none;
+
+        a {
+            position: relative;
+            display: inline-block;
+            margin: 0 15px;
+            text-transform: uppercase;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    }
 }

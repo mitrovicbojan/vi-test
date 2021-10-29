@@ -46,8 +46,26 @@
 
 .logo {
   display: flex;
+  position: absolute;
   color: black;
-  width: 100px;
+  margin-top: 1.8rem;
+  width: 120px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 body {
@@ -63,7 +81,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 10px 100px;
   z-index: 2;
   display: flex;
   justify-content: space-between;
