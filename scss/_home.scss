@@ -14,16 +14,30 @@
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         color: $white-color;        
-    }    
+    }
+        
 }
-.btn-home {
-    background-color: $orange-color;
-    border: 2px solid $white-color;
-    color: $white-color;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 4px 2px;
+.banner-btn {
+    margin: 70px auto 0;
 
+    a {
+        width: 200px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 10px;
+        padding: 12px 0;
+        color: $white-color;
+        border: .5px solid #fff;
+        position: relative;
+        z-index: 1;        
+        text-transform: uppercase;
+        
+
+        &:hover {
+            color: $white-color;
+            background-color: $orange-color;
+            border: .5px solid $orange-color;
+        }        
+    }  
+  
 }
