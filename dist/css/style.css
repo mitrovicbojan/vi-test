@@ -16,7 +16,7 @@
           clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 0);
 }
 .home__title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -83,7 +83,7 @@ ul li a:hover {
 }
 
 .container {
-  margin: 30px;
+  margin: 30px 30px 30px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;

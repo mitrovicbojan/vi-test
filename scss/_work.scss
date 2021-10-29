@@ -14,18 +14,16 @@
 
 
 .container {
-    margin: 30px;
+    margin: 30px 30px 30px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;   
-    
-    
-
+   
     .row {
         display: grid;
         margin: 30px;
         justify-content: center;
         width: 250px;
-    }
-   
+        
+    }   
 }
