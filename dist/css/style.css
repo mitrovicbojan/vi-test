@@ -44,21 +44,10 @@
   border: 0.5px solid #FF6735;
 }
 
-.nav {
-  background: #FF6735;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.nav .menu-nav {
+.logo {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  list-style-type: none;
-  padding-right: 1rem;
+  color: black;
+  width: 100px;
 }
 
 body {
@@ -71,9 +60,15 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 40px 100px;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6735;
 }
 
 a {

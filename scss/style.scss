@@ -13,9 +13,15 @@ body {
 }
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 40px 100px;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $orange-color;
 }
 
 a {
