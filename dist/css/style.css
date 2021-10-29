@@ -57,6 +57,7 @@ ul {
   display: flex;
 }
 ul li {
+  position: relative;
   list-style: none;
 }
 ul li a {
@@ -64,8 +65,10 @@ ul li a {
   display: inline-block;
   margin: 0 15px;
   text-transform: uppercase;
-  padding: 10px;
-  border: 1px solid black;
+  padding: 15px;
+}
+ul li a:hover {
+  background-color: black;
 }
 
 body {
@@ -102,4 +105,8 @@ h1, h2, h3 {
 main {
   height: 100%;
   width: 100%;
+}
+
+p {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

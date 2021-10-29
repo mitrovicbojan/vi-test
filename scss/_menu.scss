@@ -8,8 +8,9 @@
 ul {
     position: relative;
     display: flex;
-
+    
     li {
+        position: relative;
         list-style: none;
 
         a {
@@ -17,8 +18,14 @@ ul {
             display: inline-block;
             margin: 0 15px;
             text-transform: uppercase;
-            padding: 10px;
-            border: 1px solid black;
+            padding: 15px;
+            
+            
+
+            &:hover {
+                background-color: black;
+            }
         }
+
     }
 }
