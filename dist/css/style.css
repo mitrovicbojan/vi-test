@@ -6,7 +6,7 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 25vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -21,6 +21,11 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   color: #FFFFFF;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 90%;
 }
 
 .banner-btn {
@@ -44,24 +49,108 @@
   border: 0.5px solid #FF6735;
 }
 
-nav {
-  background-color: #FF6735;
-  height: 45px;
-  width: 100%;
-}
-nav ul {
-  position: fixed;
+.navbar {
+  /* make it stick */
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  width: 100%;
-  list-style-type: none;
+  /* in front of all other elements */
+  z-index: 99;
+  /* set background */
+  background-color: #FF6735;
+  padding: 10px 10%;
+  /* define flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav ul li {
-  float: left;
-}
-nav ul li a {
-  display: block;
+.navbar a {
+  font-size: 30px;
 }
 
+.logo-image {
+  display: block;
+  height: 120px;
+  position: absolute;
+  width: 45%;
+  top: -15px;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+.menu-item:hover {
+  background: black;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: #FFFFFF;
+  margin: 4px auto;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 60px;
+  }
+
+  .logo-container {
+    width: 10%;
+  }
+
+  .nav-menu {
+    width: 100%;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding: 0;
+    height: 10vh;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 5%;
+  }
+
+  .menu-icon:hover .bar {
+    background-color: #FFFFFF;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background: #FF6735;
+  }
+}
 .work h1 {
   display: flex;
   align-items: center;
@@ -86,17 +175,23 @@ nav ul li a {
   width: 250px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #fff;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-  line-height: 1;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 h1, h2, h3 {
@@ -105,8 +200,7 @@ h1, h2, h3 {
 }
 
 main {
-  height: 100%;
-  width: 100%;
+  height: 94%;
 }
 
 p {

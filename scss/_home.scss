@@ -1,6 +1,6 @@
 .home {
     height: 100%;
-    padding-top: 40vh;
+    padding-top: 25vh;
     overflow: hidden;
     align-items: center;
     text-align: center;
@@ -15,7 +15,14 @@
         margin-bottom: 1rem;
         color: $white-color;        
     }
+   
         
+}
+.logo {
+    width: 100px;
+    margin-bottom: 90%;
+    
+
 }
 .banner-btn {
     margin: 70px auto 0;

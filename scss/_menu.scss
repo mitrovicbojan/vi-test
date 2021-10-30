@@ -1,23 +1,108 @@
-nav {
+.navbar {
+    /* make it stick */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* in front of all other elements */
+    z-index: 99;
+    /* set background */
     background-color: $orange-color;
-    height: 45px;
-    width: 100%;
+    padding: 10px 10%;
 
-    ul {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        list-style-type: none;
-        
+    /* define flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        li {
-            float: left;
-            a{
-                display: block;
-            }
-        }
-        
-        
+    a {
+        font-size: 30px;        
+    }
+    
+    
+}
+.logo-image {
+    display: block;
+    height: 120px;
+    position: absolute;
+    width: 45%;
+    top: -15px;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 10px;
+    &:hover {
+      background: black;
+    }
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: $white-color;
+    margin: 4px auto;
+}
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 60px;
+
     }
 
+    .logo-container {
+        width: 10%;
+    }    
+
+    .nav-menu {
+        width: 100%;              
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        margin: 25px;
+        padding: 0;
+        height: 10vh;
+       
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: $white-color;
+    }
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+    
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;        
+        background: $orange-color;  
+          
+          
+    }
 }
+
