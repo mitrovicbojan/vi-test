@@ -147,6 +147,9 @@
     background: #FF6735;
   }
 }
+.work {
+  margin-top: 150px;
+}
 .work h1 {
   display: flex;
   align-items: center;
@@ -168,6 +171,30 @@
   display: grid;
   margin: 30px;
   justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+.details {
+  padding: 0;
+  margin: 0;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 10px;
+}
+
+.image {
+  height: 250px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.text {
   width: 250px;
 }
 
