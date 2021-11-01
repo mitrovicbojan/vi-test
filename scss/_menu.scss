@@ -1,13 +1,14 @@
 .navbar {
     /* make it stick */
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    
+    width: 100%;
     top: 0;
     /* in front of all other elements */
     z-index: 99;
     /* set background */
     background-color: $orange-color;
-    padding: 10px 10%;
+    padding: 0px 10%;
 
     /* define flex */
     display: flex;
@@ -15,17 +16,19 @@
     align-items: center;
 
     a {
-        font-size: 30px;        
+        font-size: 30px;   
+        text-transform: uppercase;     
     }
     
     
 }
 .logo-image {
     display: block;
-    height: 120px;
+    height: 70px;
     position: absolute;
-    width: 45%;
-    top: -15px;
+    width: 70px;
+    top: 0;
+    
 }
 
 .nav-menu {
@@ -37,7 +40,7 @@
 
 .menu-item {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
     &:hover {
       background: black;
     }
@@ -53,7 +56,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -62,7 +65,8 @@
     }
 
     .logo-container {
-        width: 10%;
+        width: 100%;
+         
     }    
 
     .nav-menu {
